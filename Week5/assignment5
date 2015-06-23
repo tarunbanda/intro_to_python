@@ -1,0 +1,43 @@
+Objectives:          Develop an object oriented program
+                           Develop a test program that is separate from the class under development
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Define a class where one object of the class represents a playing card. Your class should have the following methods:
+
+__init__(self, rank, suit)
+
+rank is a number in the range 1-13 indicating the ranks Ace through King, and suit is a single character "d" "c", "h", or "s" indicating the suit (diamonds, clubs, hearts, or spades). Create the corresponding card.
+
+getRank(self)
+
+Returns the rank of the card
+
+getSuit(self)
+
+Returns the suit of the card
+
+bjValue(self)
+
+Returns the Blackjack value of a card. Ace counts as 1, face cards count as 10.
+
+__str__(self)
+
+Returns a string that names the card. For example. "Ace of Spades".
+
+You must also write a simple test program that proves that all the methods work on a few card values.
+
+Important Notes:
+
+1) Class Card must have a comment that tells what one object of class Card represents.
+
+2) Every method in class Card must have a comment that tells what the method does.
+
+3) A method named __str__() is special in Python. If asked to convert an object into a string, Python calls this method automatically to do the conversion. For example,
+
+c = Card(1, "s")
+print (c)
+
+will automatically call your __str__() method, which returns "Ace of Spades" (without the quotes.)
+
+4) None of the methods defined inside class Card will do any printing. Your simple test program will do all of the printing necessary to fully test the methods of class Card.
+
